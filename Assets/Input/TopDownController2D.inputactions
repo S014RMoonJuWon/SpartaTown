@@ -59,7 +59,7 @@
                 {
                     "name": "down",
                     "id": "b92acf4b-fd97-446b-b710-158fa5b353f5",
-                    "path": "<Keyboard>/d",
+                    "path": "<Keyboard>/s",
                     "interactions": "",
                     "processors": "",
                     "groups": "KetboardMouse",
