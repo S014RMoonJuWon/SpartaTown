@@ -32,7 +32,7 @@ public class TopDownMovement : MonoBehaviour
 
     private void ApplyMovement(Vector2 direction)
     {
-        direction = direction * 5;
+        direction = direction * 10;
         movementRigidbody.velocity = direction;
     }
 }
