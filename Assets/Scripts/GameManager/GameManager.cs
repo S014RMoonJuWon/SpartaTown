@@ -17,6 +17,7 @@ public class GameManager : MonoBehaviour
         }
 
         player.GetComponent<TopDownMovement>().enabled = false;
+        player.GetComponentInChildren<SpriteRenderer>();
     }
 
     void Start()
