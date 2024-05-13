@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class TopDownAnimator : MonoBehaviour
 {
+    public GameObject player;
+    public GameObject characterRenderer1;
+    public GameObject characterRenderer2;
+
     private Rigidbody2D movementRigidbody;
     private Animator anim;
 
@@ -22,6 +26,15 @@ public class TopDownAnimator : MonoBehaviour
         else
         {
             anim.SetBool("isWalking", true);
+        }
+        
+        if (player.GetComponentInChildren<SpriteRenderer>().sprite == characterRenderer1.GetComponent<SpriteRenderer>().sprite)
+        {
+            anim.SetBool("isChanged", false) ;
+        }
+        else if (player.GetComponentInChildren<SpriteRenderer>().sprite == characterRenderer2.GetComponent<SpriteRenderer>().sprite)
+        {
+            anim.SetBool("isChanged", true);
         }
     }
 }

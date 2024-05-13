@@ -17,17 +17,20 @@ public class SelectCharaterBtn : MonoBehaviour
     {
         characterBtnImage.GetComponent<Image>().sprite = characterImage1;
         rect.sizeDelta = new Vector2(400, 400);
-        rect.position = new Vector2(710, 610);
+        rect.localPosition = new Vector2(0, 70);
 
         player.GetComponentInChildren<SpriteRenderer>().sprite = characterRenderer1.GetComponent<SpriteRenderer>().sprite;
+        player.GetComponentInChildren<Image>().rectTransform.localPosition = new Vector3(0, 75, 0);
+
     }
 
     public void SelectCharater2()
     {
         characterBtnImage.GetComponent<Image>().sprite = characterImage2;
         rect.sizeDelta = new Vector2(150, 300);
-        rect.position = new Vector2(710, 590);
+        rect.localPosition = new Vector2(0, 50);
 
         player.GetComponentInChildren<SpriteRenderer>().sprite = characterRenderer2.GetComponent<SpriteRenderer>().sprite;
+        player.GetComponentInChildren<Image>().rectTransform.localPosition = new Vector3(0, 100, 0);
     }
 }
