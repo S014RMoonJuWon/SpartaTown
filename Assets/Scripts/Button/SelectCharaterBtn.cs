@@ -15,6 +15,7 @@ public class SelectCharaterBtn : MonoBehaviour
 
     public void SelectCharater1()
     {
+        // 1번 캐릭터로 변경했을 경우 이미지 및 스프라이트 렌더러 변경
         characterBtnImage.GetComponent<Image>().sprite = characterImage1;
         rect.sizeDelta = new Vector2(400, 400);
         rect.localPosition = new Vector2(0, 70);
@@ -26,6 +27,7 @@ public class SelectCharaterBtn : MonoBehaviour
 
     public void SelectCharater2()
     {
+        // 2번 캐릭터로 변경했을 경우 이미지 및 스프라이트 렌더러 변경
         characterBtnImage.GetComponent<Image>().sprite = characterImage2;
         rect.sizeDelta = new Vector2(150, 300);
         rect.localPosition = new Vector2(0, 50);

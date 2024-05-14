@@ -18,6 +18,7 @@ public class StartBtn : MonoBehaviour
 
     public void StartGame()
     {
+        // 이름 텍스트 길이가 2 ~ 8일 경우에만 버튼이 작동 및 게임내 이름 변경
         if ((nameInputField.text.Length >= 2) && (nameInputField.text.Length <= 10))
         {
             inputName.text = nameInputField.text;
@@ -33,6 +34,7 @@ public class StartBtn : MonoBehaviour
 
     public void InGameNameChange()
     {
+        // 이름 변경 버튼
         player.GetComponent<TopDownMovement>().enabled = false;
 
         nameMenu.SetActive(true);
@@ -40,6 +42,7 @@ public class StartBtn : MonoBehaviour
 
     public void NameChangeConfirm()
     {
+        // 인게임 중 이름 변경 확정
         if ((nameInputField.text.Length >= 2) && (nameInputField.text.Length <= 10))
         {
             inputName.text = nameInputField.text;

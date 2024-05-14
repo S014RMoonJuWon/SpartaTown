@@ -7,6 +7,7 @@ using UnityEngine.UI;
 
 public class CurrentTime : MonoBehaviour
 {
+    // 현재 시간 표시
     public Text currentTime;
 
     DateTime dateTime;

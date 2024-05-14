@@ -8,11 +8,13 @@ public class RightUIBtn : MonoBehaviour
 
     public void CloseUI()
     {
+        // 인게임 오른쪽 UI 끔
         rightUI.SetActive(false);
     }
 
     public void OpenUI()
     {
+        // 인게임 오른쪽 UI 켬
         rightUI.SetActive(true);
     }
 }
