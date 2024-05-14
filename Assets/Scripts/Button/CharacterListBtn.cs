@@ -23,4 +23,9 @@ public class CharacterListBtn : MonoBehaviour
         nameInputFieldBackground.SetActive(true);
         characterListBackground.SetActive(false);
     }
+
+    public void InGameChangeCharacter()
+    {
+
+    }
 }
